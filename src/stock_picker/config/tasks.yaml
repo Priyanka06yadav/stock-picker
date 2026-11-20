@@ -1,0 +1,102 @@
+
+backend_development_task:
+  description: >
+    Analyze the following stock portfolio management
+    requirements:
+
+    {requirements}
+
+    Design and implement the complete backend using
+    Python and FastAPI.
+
+    Implement account creation, deposits, withdrawals,
+    stock purchases, stock sales, portfolio valuation,
+    profit and loss calculations, holdings management,
+    and transaction history.
+
+    Use SQLite for persistent data storage.
+
+    Implement the get_share_price(symbol) function
+    with fixed test prices for AAPL, TSLA, and GOOGL.
+
+    Enforce all financial business rules and ensure
+    invalid transactions are rejected.
+
+    Create modular, maintainable source code.
+
+    Provide clear API endpoints and document their
+    request and response formats so the frontend
+    engineer can integrate with the backend.
+
+  expected_output: >
+    A complete FastAPI backend implementation with
+    SQLite integration, stock price functionality,
+    validated API endpoints, and documented API
+    request and response formats.
+
+  agent: backend_engineer
+
+
+frontend_development_task:
+  description: >
+    Develop the frontend for the stock portfolio
+    management application using Streamlit.
+
+    Requirements:
+
+    {requirements}
+
+    Build an interactive dashboard that allows users
+    to create accounts, deposit funds, withdraw funds,
+    buy shares, and sell shares.
+
+    Display portfolio holdings, current portfolio
+    value, profit and loss, available cash balance,
+    and transaction history.
+
+    Integrate with the backend using its documented
+    REST API endpoints.
+
+    Do not implement financial business logic
+    independently in the frontend.
+
+  expected_output: >
+    A complete Streamlit frontend with account
+    management forms, stock trading interfaces,
+    portfolio dashboard, profit and loss display,
+    and transaction history integrated with
+    the backend APIs.
+
+  agent: frontend_engineer
+
+
+application_testing_task:
+  description: >
+    Test the complete stock portfolio management
+    application based on the following requirements:
+
+    {requirements}
+
+    Inspect the backend and frontend implementation.
+
+    Create automated pytest test cases covering
+    account creation, deposits, withdrawals,
+    stock purchases, stock sales, portfolio valuation,
+    profit and loss, holdings, and transaction history.
+
+    Include negative scenarios and edge cases.
+
+    Execute the tests and analyze the actual results.
+
+    Never assume that code works without executing it.
+
+    Do not modify application source code directly.
+    Report failures to the engineering lead so that
+    the responsible engineer can implement corrections.
+
+  expected_output: >
+    Automated pytest test files, actual test execution
+    results, a detailed report of passed and failed
+    tests, and actionable debugging information.
+
+  agent: test_engineer
