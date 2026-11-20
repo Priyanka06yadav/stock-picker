@@ -10,7 +10,9 @@ Built with **CrewAI and Google Gemini**, this project brings together specialize
 
 Instead of asking one AI agent to do everything, I designed a hierarchical workflow where each agent has a specific responsibility and works with the output of other agents.
 
----
+<img width="883" height="427" alt="Screenshot 2026-11-21 011708" src="https://github.com/user-attachments/assets/93ee5172-03b9-47b2-9a6a-675c59e6998e" />
+<img width="646" height="249" alt="Screenshot 2026-11-21 011724" src="https://github.com/user-attachments/assets/7ad38195-5d1e-412c-9d61-9d8cf230de40" />
+<img width="652" height="297" alt="Screenshot 2026-11-21 011733" src="https://github.com/user-attachments/assets/f66d8895-5c87-4487-922c-b4c348f2111e" />
 
 ## ✨ What Does It Do?
 
@@ -37,7 +39,6 @@ The application developed by the agents allows users to:
 
 > **A quick note:** This is a portfolio management simulation, not a stock prediction system. It uses fixed test prices for AAPL, TSLA, and GOOGL rather than live market data.
 
----
 
 ## 🧠 Meet the AI Development Team
 
@@ -65,8 +66,6 @@ flowchart TD
 ```
 
 The backend is developed first, allowing the frontend agent to work with its output. The testing agent then validates the generated application.
-
----
 
 ## 🏗️ Architecture & Tech Stack
 
@@ -107,7 +106,6 @@ I used Docker to run the code in a container with restrictions such as:
 
 These measures provide a baseline level of isolation, although they are not a complete security sandbox.
 
----
 
 ## 📂 Project Structure
 
@@ -146,8 +144,6 @@ stock_picker/
 ├── pyproject.toml
 └── uv.lock
 ```
-
----
 
 ## 🚀 Getting Started
 
@@ -197,8 +193,6 @@ uv run crewai run
 
 The CrewAI workflow will start and the configured agents will begin working on the application.
 
----
-
 ## 💻 Running the Generated Application
 
 Once the application files have been generated, open two terminals from the project root.
@@ -223,8 +217,6 @@ Open the application:
 
 http://localhost:8501
 
----
-
 ## 📚 What I Learned
 
 This project gave me hands-on experience with several important AI engineering concepts:
@@ -239,8 +231,6 @@ This project gave me hands-on experience with several important AI engineering c
 - Automating application testing with pytest.
 
 One of the most interesting parts was figuring out how to make agents work together reliably — especially when one agent's output becomes another agent's input.
-
----
 
 ## 🔮 What's Next?
 
